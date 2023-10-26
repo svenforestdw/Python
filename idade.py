@@ -29,4 +29,4 @@ def maior_de_idade(nascimento: date) -> bool:
 
 	hoje = date.today()
 
-	return (hoje.month, hoje.day) > (nascimento.month, nascimento.day)
+	return (hoje.year - nascimento.year) >= 18 and (hoje.month, hoje.day) > (nascimento.month, nascimento.day)
